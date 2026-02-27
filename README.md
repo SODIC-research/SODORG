@@ -158,3 +158,16 @@ If you use this repository in your research, please cite:
   howpublished = {\url{https://github.com/SODIC-research/SODORG}},
   note         = {Accessed: May 2026}
 }
+```
+
+## ⚖️ License
+
+Released under the MIT License. See `LICENSE` for details.
+**MIT License**. 
+---
+
+## 👩‍🔬 Maintainer
+
+**Florian Hahn**  
+SODIC Research Group, TU Chemnitz  
+[Website](https:/tu-chemnitz.de/informatik/dm/team/fh.php) — Contact: `florian.hahn@informatik.tu-chemnitz.de`
