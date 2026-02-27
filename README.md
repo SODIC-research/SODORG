@@ -146,7 +146,7 @@ This example is designed as a minimal pattern for:
 
 ---
 
-## 📖 Citation
+## Citation
 
 If you use this repository in your research, please cite:
 
@@ -166,7 +166,7 @@ Released under the MIT License. See `LICENSE` for details.
 **MIT License**. 
 ---
 
-## 👩‍🔬 Maintainer
+## Maintainer
 
 **Florian Hahn**  
 SODIC Research Group, TU Chemnitz  
