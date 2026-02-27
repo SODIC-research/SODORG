@@ -1,0 +1,497 @@
+{
+  "@context": {
+    "Instant": "http://www.w3.org/2006/time#Instant",
+    "Interval": "http://www.w3.org/2006/time#Interval",
+    "Location": "http://purl.org/dc/terms/Location",
+    "altLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "category": {
+      "@id": "https://example.org/sodorg/ontology#category",
+      "@type": "@id"
+    },
+    "changedBy": {
+      "@id": "http://www.w3.org/ns/org#changedBy",
+      "@type": "@id"
+    },
+    "countryName": {
+      "@id": "https://example.org/sodorg/ontology#countryName"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "directionInferred": {
+      "@id": "https://example.org/sodorg/ontology#directionInferred",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "endedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#endedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "eu": "http://publications.europa.eu/resource/authority/data-theme/",
+    "ex": "https://example.org/sodorg/resource/",
+    "exactMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
+      "@type": "@id"
+    },
+    "federalStateName": {
+      "@id": "https://example.org/sodorg/ontology#federalStateName"
+    },
+    "generatedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasBeginning": {
+      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@type": "@id"
+    },
+    "hasCategoryAssignment": {
+      "@id": "https://example.org/sodorg/ontology#hasCategoryAssignment",
+      "@type": "@id"
+    },
+    "hasEnd": {
+      "@id": "http://www.w3.org/2006/time#hasEnd",
+      "@type": "@id"
+    },
+    "hasSubOrganization": {
+      "@id": "http://www.w3.org/ns/org#hasSubOrganization",
+      "@type": "@id"
+    },
+    "id": "@id",
+    "inXSDDateTime": {
+      "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "inferenceNote": {
+      "@id": "https://example.org/sodorg/ontology#inferenceNote"
+    },
+    "isEuAligned": {
+      "@id": "https://example.org/sodorg/ontology#isEuAligned",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "isOpenDataCategoryAligned": {
+      "@id": "https://example.org/sodorg/ontology#isOpenDataCategoryAligned",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "org": "http://www.w3.org/ns/org#",
+    "organType": {
+      "@id": "https://example.org/sodorg/ontology#organType",
+      "@type": "@id"
+    },
+    "originalOrganization": {
+      "@id": "http://www.w3.org/ns/org#originalOrganization",
+      "@type": "@id"
+    },
+    "prefLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "prov": "http://www.w3.org/ns/prov#",
+    "resultedFrom": {
+      "@id": "http://www.w3.org/ns/org#resultedFrom",
+      "@type": "@id"
+    },
+    "resultingOrganization": {
+      "@id": "http://www.w3.org/ns/org#resultingOrganization",
+      "@type": "@id"
+    },
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sod": "https://example.org/sodorg/ontology#",
+    "spatial": {
+      "@id": "http://purl.org/dc/terms/spatial",
+      "@type": "@id"
+    },
+    "specializationOf": {
+      "@id": "http://www.w3.org/ns/prov#specializationOf",
+      "@type": "@id"
+    },
+    "startedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#startedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "subOrganizationOf": {
+      "@id": "http://www.w3.org/ns/org#subOrganizationOf",
+      "@type": "@id"
+    },
+    "temporal": {
+      "@id": "http://purl.org/dc/terms/temporal",
+      "@type": "@id"
+    },
+    "time": "http://www.w3.org/2006/time#",
+    "type": "@type",
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "http://www.w3.org/ns/shacl#property": [
+        {
+          "id": "_:Nc341cb807b4f4c7c8c7fa9ac6a8fb29d"
+        },
+        {
+          "id": "_:Nd0997c5a9d21480bbf6a6b12b2b4fa6d"
+        },
+        {
+          "id": "_:N4de4499857a64bdfbda1b5de191c03f7"
+        },
+        {
+          "id": "_:Nf1acf6fae8e844c1b8c721e9e0f626df"
+        }
+      ],
+      "http://www.w3.org/ns/shacl#targetClass": {
+        "id": "sod:CategoryAssignment"
+      },
+      "id": "https://example.org/sodorg/resource/shape/CategoryAssignmentShape",
+      "type": "http://www.w3.org/ns/shacl#NodeShape"
+    },
+    {
+      "http://www.w3.org/ns/shacl#class": {
+        "id": "skos:Concept"
+      },
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "sod:category"
+      },
+      "id": "_:Nc341cb807b4f4c7c8c7fa9ac6a8fb29d"
+    },
+    {
+      "http://www.w3.org/ns/shacl#datatype": {
+        "id": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "http://www.w3.org/ns/shacl#maxCount": 1,
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "sod:isEuAligned"
+      },
+      "id": "_:Nd0997c5a9d21480bbf6a6b12b2b4fa6d"
+    },
+    {
+      "http://www.w3.org/ns/shacl#datatype": {
+        "id": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "http://www.w3.org/ns/shacl#maxCount": 1,
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "sod:isOpenDataCategoryAligned"
+      },
+      "id": "_:N4de4499857a64bdfbda1b5de191c03f7"
+    },
+    {
+      "http://www.w3.org/ns/shacl#class": {
+        "id": "prov:Activity"
+      },
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "prov:wasGeneratedBy"
+      },
+      "id": "_:Nf1acf6fae8e844c1b8c721e9e0f626df"
+    },
+    {
+      "http://www.w3.org/ns/shacl#property": [
+        {
+          "id": "_:Ne2fcfe83f7054dadb89adbbcfc1fd7df"
+        },
+        {
+          "id": "_:N0063158a45184775a5286cff3c9374fe"
+        },
+        {
+          "id": "_:Nd815e963ad7d43bcb6745d443a6bd4e6"
+        },
+        {
+          "id": "_:N537a52fcc8a04871a861b8209014b34d"
+        },
+        {
+          "id": "_:Nb584faa817ee4dd8a8340dd78dbd3129"
+        },
+        {
+          "id": "_:Na2cccf0abdfc4422bb0b515f2ee22d96"
+        },
+        {
+          "id": "_:N224f26f5f4cf445f9ca16adec882ccb8"
+        },
+        {
+          "id": "_:N24319ee5a9f54a8e9e49da86c002a97f"
+        }
+      ],
+      "http://www.w3.org/ns/shacl#targetClass": {
+        "id": "sod:OrganVersion"
+      },
+      "id": "https://example.org/sodorg/resource/shape/OrganVersionShape",
+      "type": "http://www.w3.org/ns/shacl#NodeShape"
+    },
+    {
+      "http://www.w3.org/ns/shacl#class": {
+        "id": "org:Organization"
+      },
+      "http://www.w3.org/ns/shacl#maxCount": 1,
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "prov:specializationOf"
+      },
+      "id": "_:Ne2fcfe83f7054dadb89adbbcfc1fd7df"
+    },
+    {
+      "http://www.w3.org/ns/shacl#datatype": {
+        "id": "http://www.w3.org/2001/XMLSchema#string"
+      },
+      "http://www.w3.org/ns/shacl#maxCount": 1,
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "sod:countryName"
+      },
+      "id": "_:N0063158a45184775a5286cff3c9374fe"
+    },
+    {
+      "http://www.w3.org/ns/shacl#datatype": {
+        "id": "http://www.w3.org/2001/XMLSchema#string"
+      },
+      "http://www.w3.org/ns/shacl#maxCount": 1,
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "sod:federalStateName"
+      },
+      "id": "_:Nd815e963ad7d43bcb6745d443a6bd4e6"
+    },
+    {
+      "http://www.w3.org/ns/shacl#class": {
+        "id": "skos:Concept"
+      },
+      "http://www.w3.org/ns/shacl#in": {
+        "@list": [
+          {
+            "id": "https://example.org/sodorg/resource/organType/country"
+          },
+          {
+            "id": "https://example.org/sodorg/resource/organType/federalState"
+          },
+          {
+            "id": "https://example.org/sodorg/resource/organType/city"
+          },
+          {
+            "id": "https://example.org/sodorg/resource/organType/ministry"
+          },
+          {
+            "id": "https://example.org/sodorg/resource/organType/other"
+          }
+        ]
+      },
+      "http://www.w3.org/ns/shacl#maxCount": 1,
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "sod:organType"
+      },
+      "id": "_:N537a52fcc8a04871a861b8209014b34d"
+    },
+    {
+      "http://www.w3.org/ns/shacl#class": {
+        "id": "time:Interval"
+      },
+      "http://www.w3.org/ns/shacl#maxCount": 1,
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#node": {
+        "id": "https://example.org/sodorg/resource/shape/IntervalWithInstantsShape"
+      },
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "dct:temporal"
+      },
+      "id": "_:Nb584faa817ee4dd8a8340dd78dbd3129"
+    },
+    {
+      "http://www.w3.org/ns/shacl#class": {
+        "id": "dct:Location"
+      },
+      "http://www.w3.org/ns/shacl#maxCount": 1,
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "dct:spatial"
+      },
+      "id": "_:Na2cccf0abdfc4422bb0b515f2ee22d96"
+    },
+    {
+      "http://www.w3.org/ns/shacl#class": {
+        "id": "sod:CategoryAssignment"
+      },
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#node": {
+        "id": "https://example.org/sodorg/resource/shape/CategoryAssignmentShape"
+      },
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "sod:hasCategoryAssignment"
+      },
+      "id": "_:N224f26f5f4cf445f9ca16adec882ccb8"
+    },
+    {
+      "http://www.w3.org/ns/shacl#class": {
+        "id": "prov:Activity"
+      },
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "prov:wasGeneratedBy"
+      },
+      "id": "_:N24319ee5a9f54a8e9e49da86c002a97f"
+    },
+    {
+      "http://www.w3.org/ns/shacl#property": [
+        {
+          "id": "_:Nbeb52c8db7d2435899f987f2068915f4"
+        },
+        {
+          "id": "_:N5931fc4a4a1c4dd2918e05b36fd82574"
+        },
+        {
+          "id": "_:N3bc6248f24574eaa9a33e9a405a07f5e"
+        },
+        {
+          "id": "_:N2d6828f55adf490ea2c1151fdd026ec7"
+        }
+      ],
+      "http://www.w3.org/ns/shacl#targetClass": {
+        "id": "org:ChangeEvent"
+      },
+      "id": "https://example.org/sodorg/resource/shape/ChangeEventShape",
+      "type": "http://www.w3.org/ns/shacl#NodeShape"
+    },
+    {
+      "http://www.w3.org/ns/shacl#class": {
+        "id": "org:Organization"
+      },
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "org:originalOrganization"
+      },
+      "id": "_:Nbeb52c8db7d2435899f987f2068915f4"
+    },
+    {
+      "http://www.w3.org/ns/shacl#class": {
+        "id": "org:Organization"
+      },
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "org:resultingOrganization"
+      },
+      "id": "_:N5931fc4a4a1c4dd2918e05b36fd82574"
+    },
+    {
+      "http://www.w3.org/ns/shacl#datatype": {
+        "id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "http://www.w3.org/ns/shacl#maxCount": 1,
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "prov:startedAtTime"
+      },
+      "id": "_:N3bc6248f24574eaa9a33e9a405a07f5e"
+    },
+    {
+      "http://www.w3.org/ns/shacl#datatype": {
+        "id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "http://www.w3.org/ns/shacl#maxCount": 1,
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "prov:endedAtTime"
+      },
+      "id": "_:N2d6828f55adf490ea2c1151fdd026ec7"
+    },
+    {
+      "http://www.w3.org/ns/shacl#property": [
+        {
+          "id": "_:Nbb08b51081904b74b844ed6bf004a439"
+        },
+        {
+          "id": "_:N30280fb8575c41a2bb64a7de769f3c99"
+        }
+      ],
+      "http://www.w3.org/ns/shacl#targetClass": {
+        "id": "time:Interval"
+      },
+      "id": "https://example.org/sodorg/resource/shape/IntervalShape",
+      "type": "http://www.w3.org/ns/shacl#NodeShape"
+    },
+    {
+      "http://www.w3.org/ns/shacl#class": {
+        "id": "time:Instant"
+      },
+      "http://www.w3.org/ns/shacl#maxCount": 1,
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "time:hasBeginning"
+      },
+      "id": "_:Nbb08b51081904b74b844ed6bf004a439"
+    },
+    {
+      "http://www.w3.org/ns/shacl#class": {
+        "id": "time:Instant"
+      },
+      "http://www.w3.org/ns/shacl#maxCount": 1,
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "time:hasEnd"
+      },
+      "id": "_:N30280fb8575c41a2bb64a7de769f3c99"
+    },
+    {
+      "http://www.w3.org/ns/shacl#property": [
+        {
+          "id": "_:N4ec44ec8f8bc46598b03a71057e8df94"
+        },
+        {
+          "id": "_:N329772d478964c2b9b4e0209b4bd701b"
+        }
+      ],
+      "http://www.w3.org/ns/shacl#targetClass": {
+        "id": "time:Interval"
+      },
+      "id": "https://example.org/sodorg/resource/shape/IntervalWithInstantsShape",
+      "type": "http://www.w3.org/ns/shacl#NodeShape"
+    },
+    {
+      "http://www.w3.org/ns/shacl#class": {
+        "id": "time:Instant"
+      },
+      "http://www.w3.org/ns/shacl#maxCount": 1,
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#node": {
+        "id": "https://example.org/sodorg/resource/shape/InstantShape"
+      },
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "time:hasBeginning"
+      },
+      "id": "_:N4ec44ec8f8bc46598b03a71057e8df94"
+    },
+    {
+      "http://www.w3.org/ns/shacl#class": {
+        "id": "time:Instant"
+      },
+      "http://www.w3.org/ns/shacl#maxCount": 1,
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#node": {
+        "id": "https://example.org/sodorg/resource/shape/InstantShape"
+      },
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "time:hasEnd"
+      },
+      "id": "_:N329772d478964c2b9b4e0209b4bd701b"
+    },
+    {
+      "http://www.w3.org/ns/shacl#property": {
+        "id": "_:N62f8694b3c84489aad522466d4036c82"
+      },
+      "http://www.w3.org/ns/shacl#targetClass": {
+        "id": "time:Instant"
+      },
+      "id": "https://example.org/sodorg/resource/shape/InstantShape",
+      "type": "http://www.w3.org/ns/shacl#NodeShape"
+    },
+    {
+      "http://www.w3.org/ns/shacl#datatype": {
+        "id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "http://www.w3.org/ns/shacl#maxCount": 1,
+      "http://www.w3.org/ns/shacl#minCount": 1,
+      "http://www.w3.org/ns/shacl#path": {
+        "id": "time:inXSDDateTime"
+      },
+      "id": "_:N62f8694b3c84489aad522466d4036c82"
+    }
+  ]
+}

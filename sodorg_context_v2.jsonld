@@ -1,0 +1,124 @@
+{
+  "@context": {
+    "ex": "https://example.org/sodorg/resource/",
+    "sod": "https://example.org/sodorg/ontology#",
+    "org": "http://www.w3.org/ns/org#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "time": "http://www.w3.org/2006/time#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "eu": "http://publications.europa.eu/resource/authority/data-theme/",
+    "type": "@type",
+    "id": "@id",
+    "prefLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "altLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "countryName": {
+      "@id": "https://example.org/sodorg/ontology#countryName"
+    },
+    "federalStateName": {
+      "@id": "https://example.org/sodorg/ontology#federalStateName"
+    },
+    "organType": {
+      "@id": "https://example.org/sodorg/ontology#organType",
+      "@type": "@id"
+    },
+    "hasCategoryAssignment": {
+      "@id": "https://example.org/sodorg/ontology#hasCategoryAssignment",
+      "@type": "@id"
+    },
+    "category": {
+      "@id": "https://example.org/sodorg/ontology#category",
+      "@type": "@id"
+    },
+    "isEuAligned": {
+      "@id": "https://example.org/sodorg/ontology#isEuAligned",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "isOpenDataCategoryAligned": {
+      "@id": "https://example.org/sodorg/ontology#isOpenDataCategoryAligned",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temporal": {
+      "@id": "http://purl.org/dc/terms/temporal",
+      "@type": "@id"
+    },
+    "spatial": {
+      "@id": "http://purl.org/dc/terms/spatial",
+      "@type": "@id"
+    },
+    "specializationOf": {
+      "@id": "http://www.w3.org/ns/prov#specializationOf",
+      "@type": "@id"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    },
+    "generatedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "startedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#startedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "endedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#endedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "subOrganizationOf": {
+      "@id": "http://www.w3.org/ns/org#subOrganizationOf",
+      "@type": "@id"
+    },
+    "hasSubOrganization": {
+      "@id": "http://www.w3.org/ns/org#hasSubOrganization",
+      "@type": "@id"
+    },
+    "originalOrganization": {
+      "@id": "http://www.w3.org/ns/org#originalOrganization",
+      "@type": "@id"
+    },
+    "resultingOrganization": {
+      "@id": "http://www.w3.org/ns/org#resultingOrganization",
+      "@type": "@id"
+    },
+    "resultedFrom": {
+      "@id": "http://www.w3.org/ns/org#resultedFrom",
+      "@type": "@id"
+    },
+    "changedBy": {
+      "@id": "http://www.w3.org/ns/org#changedBy",
+      "@type": "@id"
+    },
+    "exactMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
+      "@type": "@id"
+    },
+    "directionInferred": {
+      "@id": "https://example.org/sodorg/ontology#directionInferred",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "inferenceNote": {
+      "@id": "https://example.org/sodorg/ontology#inferenceNote"
+    },
+    "Interval": "http://www.w3.org/2006/time#Interval",
+    "Instant": "http://www.w3.org/2006/time#Instant",
+    "inXSDDateTime": {
+      "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasBeginning": {
+      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@type": "@id"
+    },
+    "hasEnd": {
+      "@id": "http://www.w3.org/2006/time#hasEnd",
+      "@type": "@id"
+    },
+    "Location": "http://purl.org/dc/terms/Location"
+  }
+}

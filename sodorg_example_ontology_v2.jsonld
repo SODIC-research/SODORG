@@ -1,0 +1,297 @@
+{
+  "@context": {
+    "Instant": "http://www.w3.org/2006/time#Instant",
+    "Interval": "http://www.w3.org/2006/time#Interval",
+    "Location": "http://purl.org/dc/terms/Location",
+    "altLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "category": {
+      "@id": "https://example.org/sodorg/ontology#category",
+      "@type": "@id"
+    },
+    "changedBy": {
+      "@id": "http://www.w3.org/ns/org#changedBy",
+      "@type": "@id"
+    },
+    "countryName": {
+      "@id": "https://example.org/sodorg/ontology#countryName"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "directionInferred": {
+      "@id": "https://example.org/sodorg/ontology#directionInferred",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "endedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#endedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "eu": "http://publications.europa.eu/resource/authority/data-theme/",
+    "ex": "https://example.org/sodorg/resource/",
+    "exactMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
+      "@type": "@id"
+    },
+    "federalStateName": {
+      "@id": "https://example.org/sodorg/ontology#federalStateName"
+    },
+    "generatedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasBeginning": {
+      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@type": "@id"
+    },
+    "hasCategoryAssignment": {
+      "@id": "https://example.org/sodorg/ontology#hasCategoryAssignment",
+      "@type": "@id"
+    },
+    "hasEnd": {
+      "@id": "http://www.w3.org/2006/time#hasEnd",
+      "@type": "@id"
+    },
+    "hasSubOrganization": {
+      "@id": "http://www.w3.org/ns/org#hasSubOrganization",
+      "@type": "@id"
+    },
+    "id": "@id",
+    "inXSDDateTime": {
+      "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "inferenceNote": {
+      "@id": "https://example.org/sodorg/ontology#inferenceNote"
+    },
+    "isEuAligned": {
+      "@id": "https://example.org/sodorg/ontology#isEuAligned",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "isOpenDataCategoryAligned": {
+      "@id": "https://example.org/sodorg/ontology#isOpenDataCategoryAligned",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "org": "http://www.w3.org/ns/org#",
+    "organType": {
+      "@id": "https://example.org/sodorg/ontology#organType",
+      "@type": "@id"
+    },
+    "originalOrganization": {
+      "@id": "http://www.w3.org/ns/org#originalOrganization",
+      "@type": "@id"
+    },
+    "prefLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "prov": "http://www.w3.org/ns/prov#",
+    "resultedFrom": {
+      "@id": "http://www.w3.org/ns/org#resultedFrom",
+      "@type": "@id"
+    },
+    "resultingOrganization": {
+      "@id": "http://www.w3.org/ns/org#resultingOrganization",
+      "@type": "@id"
+    },
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sod": "https://example.org/sodorg/ontology#",
+    "spatial": {
+      "@id": "http://purl.org/dc/terms/spatial",
+      "@type": "@id"
+    },
+    "specializationOf": {
+      "@id": "http://www.w3.org/ns/prov#specializationOf",
+      "@type": "@id"
+    },
+    "startedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#startedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "subOrganizationOf": {
+      "@id": "http://www.w3.org/ns/org#subOrganizationOf",
+      "@type": "@id"
+    },
+    "temporal": {
+      "@id": "http://purl.org/dc/terms/temporal",
+      "@type": "@id"
+    },
+    "time": "http://www.w3.org/2006/time#",
+    "type": "@type",
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "http://www.w3.org/2000/01/rdf-schema#domain": {
+        "id": "sod:OrganVersion"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "federal state name"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "id": "http://www.w3.org/2001/XMLSchema#string"
+      },
+      "id": "sod:federalStateName",
+      "type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "http://www.w3.org/2000/01/rdf-schema#domain": {
+        "id": "org:ChangeEvent"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "direction inferred"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "id": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "id": "sod:directionInferred",
+      "type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "http://www.w3.org/2000/01/rdf-schema#domain": {
+        "id": "org:ChangeEvent"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "inference note"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "id": "http://www.w3.org/2001/XMLSchema#string"
+      },
+      "id": "sod:inferenceNote",
+      "type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "http://www.w3.org/2000/01/rdf-schema#domain": {
+        "id": "sod:CategoryAssignment"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "category"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "id": "skos:Concept"
+      },
+      "id": "sod:category",
+      "type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "Organization version (time-scoped)"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "id": "prov:Entity"
+      },
+      "id": "sod:OrganVersion",
+      "type": "http://www.w3.org/2002/07/owl#Class"
+    },
+    {
+      "dct:created": {
+        "@value": "2026-02-17T00:00:00+00:00",
+        "type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "SODORG example ontology"
+      },
+      "id": "https://example.org/sodorg/ontology",
+      "type": "http://www.w3.org/2002/07/owl#Ontology"
+    },
+    {
+      "http://www.w3.org/2000/01/rdf-schema#domain": {
+        "id": "sod:CategoryAssignment"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "is EU aligned"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "id": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "id": "sod:isEuAligned",
+      "type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "Open data category concept"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "id": "skos:Concept"
+      },
+      "id": "sod:OpenDataCategory",
+      "type": "http://www.w3.org/2002/07/owl#Class"
+    },
+    {
+      "http://www.w3.org/2000/01/rdf-schema#domain": {
+        "id": "sod:CategoryAssignment"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "is open data category aligned"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "id": "http://www.w3.org/2001/XMLSchema#boolean"
+      },
+      "id": "sod:isOpenDataCategoryAligned",
+      "type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "http://www.w3.org/2000/01/rdf-schema#domain": {
+        "id": "sod:OrganVersion"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "organ type"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "id": "skos:Concept"
+      },
+      "id": "sod:organType",
+      "type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "http://www.w3.org/2000/01/rdf-schema#domain": {
+        "id": "sod:OrganVersion"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "country name"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "id": "http://www.w3.org/2001/XMLSchema#string"
+      },
+      "id": "sod:countryName",
+      "type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "http://www.w3.org/2000/01/rdf-schema#domain": {
+        "id": "sod:OrganVersion"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has category assignment"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "id": "sod:CategoryAssignment"
+      },
+      "id": "sod:hasCategoryAssignment",
+      "type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "Category assignment with alignment flags"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "id": "prov:Entity"
+      },
+      "id": "sod:CategoryAssignment",
+      "type": "http://www.w3.org/2002/07/owl#Class"
+    }
+  ]
+}

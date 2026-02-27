@@ -1,0 +1,395 @@
+{
+  "@context": {
+    "Instant": "http://www.w3.org/2006/time#Instant",
+    "Interval": "http://www.w3.org/2006/time#Interval",
+    "Location": "http://purl.org/dc/terms/Location",
+    "altLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "category": {
+      "@id": "https://example.org/sodorg/ontology#category",
+      "@type": "@id"
+    },
+    "changedBy": {
+      "@id": "http://www.w3.org/ns/org#changedBy",
+      "@type": "@id"
+    },
+    "countryName": {
+      "@id": "https://example.org/sodorg/ontology#countryName"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "directionInferred": {
+      "@id": "https://example.org/sodorg/ontology#directionInferred",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "endedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#endedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "eu": "http://publications.europa.eu/resource/authority/data-theme/",
+    "ex": "https://example.org/sodorg/resource/",
+    "exactMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
+      "@type": "@id"
+    },
+    "federalStateName": {
+      "@id": "https://example.org/sodorg/ontology#federalStateName"
+    },
+    "generatedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasBeginning": {
+      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@type": "@id"
+    },
+    "hasCategoryAssignment": {
+      "@id": "https://example.org/sodorg/ontology#hasCategoryAssignment",
+      "@type": "@id"
+    },
+    "hasEnd": {
+      "@id": "http://www.w3.org/2006/time#hasEnd",
+      "@type": "@id"
+    },
+    "hasSubOrganization": {
+      "@id": "http://www.w3.org/ns/org#hasSubOrganization",
+      "@type": "@id"
+    },
+    "id": "@id",
+    "inXSDDateTime": {
+      "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "inferenceNote": {
+      "@id": "https://example.org/sodorg/ontology#inferenceNote"
+    },
+    "isEuAligned": {
+      "@id": "https://example.org/sodorg/ontology#isEuAligned",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "isOpenDataCategoryAligned": {
+      "@id": "https://example.org/sodorg/ontology#isOpenDataCategoryAligned",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "org": "http://www.w3.org/ns/org#",
+    "organType": {
+      "@id": "https://example.org/sodorg/ontology#organType",
+      "@type": "@id"
+    },
+    "originalOrganization": {
+      "@id": "http://www.w3.org/ns/org#originalOrganization",
+      "@type": "@id"
+    },
+    "prefLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "prov": "http://www.w3.org/ns/prov#",
+    "resultedFrom": {
+      "@id": "http://www.w3.org/ns/org#resultedFrom",
+      "@type": "@id"
+    },
+    "resultingOrganization": {
+      "@id": "http://www.w3.org/ns/org#resultingOrganization",
+      "@type": "@id"
+    },
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sod": "https://example.org/sodorg/ontology#",
+    "spatial": {
+      "@id": "http://purl.org/dc/terms/spatial",
+      "@type": "@id"
+    },
+    "specializationOf": {
+      "@id": "http://www.w3.org/ns/prov#specializationOf",
+      "@type": "@id"
+    },
+    "startedAtTime": {
+      "@id": "http://www.w3.org/ns/prov#startedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "subOrganizationOf": {
+      "@id": "http://www.w3.org/ns/org#subOrganizationOf",
+      "@type": "@id"
+    },
+    "temporal": {
+      "@id": "http://purl.org/dc/terms/temporal",
+      "@type": "@id"
+    },
+    "time": "http://www.w3.org/2006/time#",
+    "type": "@type",
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "countryName": "Germany",
+      "federalStateName": "Schleswig-Holstein",
+      "hasCategoryAssignment": "_:Nbbf418d418254961a2e48450c7063748",
+      "id": "https://example.org/sodorg/resource/orgVersion/Ministerium_fuer_Klimaschutz/2021-02-28",
+      "organType": "https://example.org/sodorg/resource/organType/federalState",
+      "spatial": "https://example.org/sodorg/resource/place/Kiel",
+      "specializationOf": "https://example.org/sodorg/resource/org/Ministerium_fuer_Klimaschutz",
+      "temporal": "https://example.org/sodorg/resource/interval/2021-02-28_to_2026-02-17/Ministerium_fuer_Klimaschutz",
+      "type": "sod:OrganVersion",
+      "wasGeneratedBy": "https://example.org/sodorg/resource/activity/snapshot-2026-02-17"
+    },
+    {
+      "id": "https://example.org/sodorg/resource/place/Kiel",
+      "prefLabel": {
+        "@language": "de",
+        "@value": "Kiel"
+      },
+      "type": "Location"
+    },
+    {
+      "id": "https://example.org/sodorg/resource/organType/federalState",
+      "prefLabel": {
+        "@language": "en",
+        "@value": "federalState"
+      },
+      "skos:inScheme": {
+        "id": "https://example.org/sodorg/resource/conceptScheme/organType"
+      },
+      "type": "skos:Concept"
+    },
+    {
+      "countryName": "Germany",
+      "federalStateName": "Schleswig-Holstein",
+      "hasCategoryAssignment": "_:N3a0ce1feb47e458cab7a9d2052cf0aa1",
+      "id": "https://example.org/sodorg/resource/orgVersion/Alternative_Energien/2021-02-28",
+      "organType": "https://example.org/sodorg/resource/organType/federalState",
+      "spatial": "https://example.org/sodorg/resource/place/Kiel",
+      "specializationOf": "https://example.org/sodorg/resource/org/Alternative_Energien",
+      "temporal": "https://example.org/sodorg/resource/interval/2021-02-28_to_2026-02-17/Alternative_Energien",
+      "type": "sod:OrganVersion",
+      "wasGeneratedBy": "https://example.org/sodorg/resource/activity/snapshot-2026-02-17"
+    },
+    {
+      "hasBeginning": "_:Nd4d7dde2337742a9a5fc05271a677459",
+      "hasEnd": "_:Nea7a29a04bfd4be19f4e8e924321c052",
+      "id": "https://example.org/sodorg/resource/interval/2021-02-28_to_2026-02-17/Ministerium_fuer_Klimaschutz",
+      "type": "Interval"
+    },
+    {
+      "generatedAtTime": "2026-02-17T00:00:00+00:00",
+      "id": "https://example.org/sodorg/resource/activity/snapshot-2026-02-17",
+      "type": "prov:Activity"
+    },
+    {
+      "id": "https://example.org/sodorg/resource/conceptScheme/organType",
+      "prefLabel": {
+        "@language": "en",
+        "@value": "Organ type scheme (example)"
+      },
+      "skos:hasTopConcept": [
+        {
+          "id": "https://example.org/sodorg/resource/organType/country"
+        },
+        {
+          "id": "https://example.org/sodorg/resource/organType/federalState"
+        },
+        {
+          "id": "https://example.org/sodorg/resource/organType/city"
+        },
+        {
+          "id": "https://example.org/sodorg/resource/organType/ministry"
+        },
+        {
+          "id": "https://example.org/sodorg/resource/organType/other"
+        }
+      ],
+      "type": "skos:ConceptScheme"
+    },
+    {
+      "altLabel": {
+        "@language": "en",
+        "@value": "Ministry for Energy"
+      },
+      "changedBy": "https://example.org/sodorg/resource/changeEvent/Ministerium_fuer_Energiewende_to_Ministerium_fuer_Klimaschutz/2021-02-28",
+      "id": "https://example.org/sodorg/resource/org/Ministerium_fuer_Energiewende",
+      "prefLabel": {
+        "@language": "de",
+        "@value": "Ministerium für Energiewende"
+      },
+      "prov:wasDerivedFrom": {
+        "id": "https://example.org/sodorg/resource/org/Ministerium_fuer_Lanwirtschaft"
+      },
+      "resultedFrom": "https://example.org/sodorg/resource/changeEvent/Ministerium_fuer_Lanwirtschaft_to_Ministerium_fuer_Energiewende/2017-02-28",
+      "type": "org:Organization"
+    },
+    {
+      "id": "https://example.org/sodorg/resource/organType/country",
+      "prefLabel": {
+        "@language": "en",
+        "@value": "country"
+      },
+      "skos:inScheme": {
+        "id": "https://example.org/sodorg/resource/conceptScheme/organType"
+      },
+      "type": "skos:Concept"
+    },
+    {
+      "id": "https://example.org/sodorg/resource/organType/city",
+      "prefLabel": {
+        "@language": "en",
+        "@value": "city"
+      },
+      "skos:inScheme": {
+        "id": "https://example.org/sodorg/resource/conceptScheme/organType"
+      },
+      "type": "skos:Concept"
+    },
+    {
+      "hasBeginning": "_:Nd926d9605a7a4c0aa6fa1468289858d8",
+      "hasEnd": "_:Na854da26baae46399c67462f56ef6ad2",
+      "id": "https://example.org/sodorg/resource/interval/2021-02-28_to_2026-02-17/Alternative_Energien",
+      "type": "Interval"
+    },
+    {
+      "countryName": "Germany",
+      "federalStateName": "Schleswig-Holstein",
+      "hasCategoryAssignment": "_:N35cf801bf86b4257b149719759cd1692",
+      "id": "https://example.org/sodorg/resource/orgVersion/Ministerium_fuer_Energiewende/2017-02-28",
+      "organType": "https://example.org/sodorg/resource/organType/federalState",
+      "spatial": "https://example.org/sodorg/resource/place/Kiel",
+      "specializationOf": "https://example.org/sodorg/resource/org/Ministerium_fuer_Energiewende",
+      "temporal": "https://example.org/sodorg/resource/interval/2017-02-28_to_2021-02-28/Ministerium_fuer_Energiewende",
+      "type": "sod:OrganVersion",
+      "wasGeneratedBy": "https://example.org/sodorg/resource/activity/snapshot-2026-02-17"
+    },
+    {
+      "hasBeginning": "_:N2d28cda52a16456195cdedd2af6f8e59",
+      "hasEnd": "_:Na5eeb56353fb4c76abb9c741a0981ff4",
+      "id": "https://example.org/sodorg/resource/interval/2017-02-28_to_2021-02-28/Ministerium_fuer_Energiewende",
+      "type": "Interval"
+    },
+    {
+      "exactMatch": "eu:ENER",
+      "id": "https://example.org/sodorg/resource/category/Energie",
+      "prefLabel": {
+        "@language": "de",
+        "@value": "Energie"
+      },
+      "type": [
+        "skos:Concept",
+        "sod:OpenDataCategory"
+      ]
+    },
+    {
+      "directionInferred": "true",
+      "endedAtTime": "2021-02-28T00:00:00+00:00",
+      "id": "https://example.org/sodorg/resource/changeEvent/Ministerium_fuer_Energiewende_to_Ministerium_fuer_Klimaschutz/2021-02-28",
+      "inferenceNote": "field=organSuccessor on rowOrgan=Ministerium für Klimaschutz",
+      "originalOrganization": "https://example.org/sodorg/resource/org/Ministerium_fuer_Energiewende",
+      "resultingOrganization": "https://example.org/sodorg/resource/org/Ministerium_fuer_Klimaschutz",
+      "startedAtTime": "2021-02-28T00:00:00+00:00",
+      "type": "org:ChangeEvent",
+      "wasGeneratedBy": "https://example.org/sodorg/resource/activity/snapshot-2026-02-17"
+    },
+    {
+      "directionInferred": "true",
+      "endedAtTime": "2017-02-28T00:00:00+00:00",
+      "id": "https://example.org/sodorg/resource/changeEvent/Ministerium_fuer_Lanwirtschaft_to_Ministerium_fuer_Energiewende/2017-02-28",
+      "inferenceNote": "field=organPredecessor on rowOrgan=Ministerium für Lanwirtschaft",
+      "originalOrganization": "https://example.org/sodorg/resource/org/Ministerium_fuer_Lanwirtschaft",
+      "resultingOrganization": "https://example.org/sodorg/resource/org/Ministerium_fuer_Energiewende",
+      "startedAtTime": "2017-02-28T00:00:00+00:00",
+      "type": "org:ChangeEvent",
+      "wasGeneratedBy": "https://example.org/sodorg/resource/activity/snapshot-2026-02-17"
+    },
+    {
+      "id": "https://example.org/sodorg/resource/org/Holz",
+      "prefLabel": {
+        "@language": "de",
+        "@value": "Holz"
+      },
+      "subOrganizationOf": "https://example.org/sodorg/resource/org/Alternative_Energien",
+      "type": "org:Organization"
+    },
+    {
+      "altLabel": {
+        "@language": "en",
+        "@value": "Alternative energy"
+      },
+      "hasSubOrganization": "https://example.org/sodorg/resource/org/Holz",
+      "id": "https://example.org/sodorg/resource/org/Alternative_Energien",
+      "prefLabel": {
+        "@language": "de",
+        "@value": "Alternative Energien"
+      },
+      "subOrganizationOf": "https://example.org/sodorg/resource/org/Ministerium_fuer_Klimaschutz",
+      "type": "org:Organization"
+    },
+    {
+      "id": "https://example.org/sodorg/resource/organType/ministry",
+      "prefLabel": {
+        "@language": "en",
+        "@value": "ministry"
+      },
+      "skos:inScheme": {
+        "id": "https://example.org/sodorg/resource/conceptScheme/organType"
+      },
+      "type": "skos:Concept"
+    },
+    {
+      "id": "https://example.org/sodorg/resource/organType/other",
+      "prefLabel": {
+        "@language": "en",
+        "@value": "other"
+      },
+      "skos:inScheme": {
+        "id": "https://example.org/sodorg/resource/conceptScheme/organType"
+      },
+      "type": "skos:Concept"
+    },
+    {
+      "countryName": "Germany",
+      "federalStateName": "Schleswig-Holstein",
+      "hasCategoryAssignment": "_:N1dc5454c9728419f89b00195dd980092",
+      "id": "https://example.org/sodorg/resource/orgVersion/Ministerium_fuer_Lanwirtschaft/2013-02-28",
+      "organType": "https://example.org/sodorg/resource/organType/federalState",
+      "spatial": "https://example.org/sodorg/resource/place/Kiel",
+      "specializationOf": "https://example.org/sodorg/resource/org/Ministerium_fuer_Lanwirtschaft",
+      "temporal": "https://example.org/sodorg/resource/interval/2013-02-28_to_2017-02-28/Ministerium_fuer_Lanwirtschaft",
+      "type": "sod:OrganVersion",
+      "wasGeneratedBy": "https://example.org/sodorg/resource/activity/snapshot-2026-02-17"
+    },
+    {
+      "hasBeginning": "_:N734a3cca414b4a53a3a58cc7ec2d5108",
+      "hasEnd": "_:N61ae9362bd214a2d81cac3ec7950d0df",
+      "id": "https://example.org/sodorg/resource/interval/2013-02-28_to_2017-02-28/Ministerium_fuer_Lanwirtschaft",
+      "type": "Interval"
+    },
+    {
+      "altLabel": {
+        "@language": "en",
+        "@value": "Ministry for new energy"
+      },
+      "hasSubOrganization": "https://example.org/sodorg/resource/org/Alternative_Energien",
+      "id": "https://example.org/sodorg/resource/org/Ministerium_fuer_Klimaschutz",
+      "prefLabel": {
+        "@language": "de",
+        "@value": "Ministerium für Klimaschutz"
+      },
+      "prov:wasDerivedFrom": {
+        "id": "https://example.org/sodorg/resource/org/Ministerium_fuer_Energiewende"
+      },
+      "resultedFrom": "https://example.org/sodorg/resource/changeEvent/Ministerium_fuer_Energiewende_to_Ministerium_fuer_Klimaschutz/2021-02-28",
+      "type": "org:Organization"
+    },
+    {
+      "altLabel": {
+        "@language": "en",
+        "@value": "Ministry for Agriculture"
+      },
+      "changedBy": "https://example.org/sodorg/resource/changeEvent/Ministerium_fuer_Lanwirtschaft_to_Ministerium_fuer_Energiewende/2017-02-28",
+      "id": "https://example.org/sodorg/resource/org/Ministerium_fuer_Lanwirtschaft",
+      "prefLabel": {
+        "@language": "de",
+        "@value": "Ministerium für Lanwirtschaft"
+      },
+      "type": "org:Organization"
+    }
+  ]
+}
