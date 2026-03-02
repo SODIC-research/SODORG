@@ -1,0 +1,111 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/ns/shacl#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sod: <https://example.org/sodorg/ontology#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.org/sodorg/resource/shape/ChangeEventShape> a ns1:NodeShape ;
+    ns1:property [ ns1:datatype xsd:dateTime ;
+            ns1:maxCount 1 ;
+            ns1:minCount 1 ;
+            ns1:path prov:endedAtTime ],
+        [ ns1:datatype xsd:dateTime ;
+            ns1:maxCount 1 ;
+            ns1:minCount 1 ;
+            ns1:path prov:startedAtTime ],
+        [ ns1:class org:Organization ;
+            ns1:minCount 1 ;
+            ns1:path org:resultingOrganization ],
+        [ ns1:class org:Organization ;
+            ns1:minCount 1 ;
+            ns1:path org:originalOrganization ] ;
+    ns1:targetClass org:ChangeEvent .
+
+<https://example.org/sodorg/resource/shape/IntervalShape> a ns1:NodeShape ;
+    ns1:property [ ns1:class time:Instant ;
+            ns1:maxCount 1 ;
+            ns1:minCount 1 ;
+            ns1:path time:hasEnd ],
+        [ ns1:class time:Instant ;
+            ns1:maxCount 1 ;
+            ns1:minCount 1 ;
+            ns1:path time:hasBeginning ] ;
+    ns1:targetClass time:Interval .
+
+<https://example.org/sodorg/resource/shape/OrganVersionShape> a ns1:NodeShape ;
+    ns1:property [ ns1:datatype xsd:string ;
+            ns1:maxCount 1 ;
+            ns1:minCount 1 ;
+            ns1:path sod:countryName ],
+        [ ns1:class sod:CategoryAssignment ;
+            ns1:minCount 1 ;
+            ns1:node <https://example.org/sodorg/resource/shape/CategoryAssignmentShape> ;
+            ns1:path sod:hasCategoryAssignment ],
+        [ ns1:class prov:Activity ;
+            ns1:minCount 1 ;
+            ns1:path prov:wasGeneratedBy ],
+        [ ns1:class skos:Concept ;
+            ns1:in ( <https://example.org/sodorg/resource/organType/country> <https://example.org/sodorg/resource/organType/federalState> <https://example.org/sodorg/resource/organType/city> <https://example.org/sodorg/resource/organType/ministry> <https://example.org/sodorg/resource/organType/other> ) ;
+            ns1:maxCount 1 ;
+            ns1:minCount 1 ;
+            ns1:path sod:organType ],
+        [ ns1:class dct:Location ;
+            ns1:maxCount 1 ;
+            ns1:minCount 1 ;
+            ns1:path dct:spatial ],
+        [ ns1:class time:Interval ;
+            ns1:maxCount 1 ;
+            ns1:minCount 1 ;
+            ns1:node <https://example.org/sodorg/resource/shape/IntervalWithInstantsShape> ;
+            ns1:path dct:temporal ],
+        [ ns1:datatype xsd:string ;
+            ns1:maxCount 1 ;
+            ns1:minCount 1 ;
+            ns1:path sod:federalStateName ],
+        [ ns1:class org:Organization ;
+            ns1:maxCount 1 ;
+            ns1:minCount 1 ;
+            ns1:path prov:specializationOf ] ;
+    ns1:targetClass sod:OrganVersion .
+
+<https://example.org/sodorg/resource/shape/CategoryAssignmentShape> a ns1:NodeShape ;
+    ns1:property [ ns1:datatype xsd:boolean ;
+            ns1:maxCount 1 ;
+            ns1:minCount 1 ;
+            ns1:path sod:isOpenDataCategoryAligned ],
+        [ ns1:class skos:Concept ;
+            ns1:minCount 1 ;
+            ns1:path sod:category ],
+        [ ns1:datatype xsd:boolean ;
+            ns1:maxCount 1 ;
+            ns1:minCount 1 ;
+            ns1:path sod:isEuAligned ],
+        [ ns1:class prov:Activity ;
+            ns1:minCount 1 ;
+            ns1:path prov:wasGeneratedBy ] ;
+    ns1:targetClass sod:CategoryAssignment .
+
+<https://example.org/sodorg/resource/shape/IntervalWithInstantsShape> a ns1:NodeShape ;
+    ns1:property [ ns1:class time:Instant ;
+            ns1:maxCount 1 ;
+            ns1:minCount 1 ;
+            ns1:node <https://example.org/sodorg/resource/shape/InstantShape> ;
+            ns1:path time:hasEnd ],
+        [ ns1:class time:Instant ;
+            ns1:maxCount 1 ;
+            ns1:minCount 1 ;
+            ns1:node <https://example.org/sodorg/resource/shape/InstantShape> ;
+            ns1:path time:hasBeginning ] ;
+    ns1:targetClass time:Interval .
+
+<https://example.org/sodorg/resource/shape/InstantShape> a ns1:NodeShape ;
+    ns1:property [ ns1:datatype xsd:dateTime ;
+            ns1:maxCount 1 ;
+            ns1:minCount 1 ;
+            ns1:path time:inXSDDateTime ] ;
+    ns1:targetClass time:Instant .
+

@@ -1,0 +1,69 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sod: <https://example.org/sodorg/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.org/sodorg/ontology> a <http://www.w3.org/2002/07/owl#Ontology> ;
+    rdfs:label "SODORG example ontology"@en ;
+    dct:created "2026-02-17T00:00:00+00:00"^^xsd:dateTime .
+
+sod:OpenDataCategory a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Open data category concept"@en ;
+    rdfs:subClassOf skos:Concept .
+
+sod:category a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "category"@en ;
+    rdfs:domain sod:CategoryAssignment ;
+    rdfs:range skos:Concept .
+
+sod:countryName a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "country name"@en ;
+    rdfs:domain sod:OrganVersion ;
+    rdfs:range xsd:string .
+
+sod:directionInferred a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "direction inferred"@en ;
+    rdfs:domain org:ChangeEvent ;
+    rdfs:range xsd:boolean .
+
+sod:federalStateName a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "federal state name"@en ;
+    rdfs:domain sod:OrganVersion ;
+    rdfs:range xsd:string .
+
+sod:hasCategoryAssignment a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "has category assignment"@en ;
+    rdfs:domain sod:OrganVersion ;
+    rdfs:range sod:CategoryAssignment .
+
+sod:inferenceNote a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "inference note"@en ;
+    rdfs:domain org:ChangeEvent ;
+    rdfs:range xsd:string .
+
+sod:isEuAligned a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "is EU aligned"@en ;
+    rdfs:domain sod:CategoryAssignment ;
+    rdfs:range xsd:boolean .
+
+sod:isOpenDataCategoryAligned a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "is open data category aligned"@en ;
+    rdfs:domain sod:CategoryAssignment ;
+    rdfs:range xsd:boolean .
+
+sod:organType a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "organ type"@en ;
+    rdfs:domain sod:OrganVersion ;
+    rdfs:range skos:Concept .
+
+sod:CategoryAssignment a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Category assignment with alignment flags"@en ;
+    rdfs:subClassOf prov:Entity .
+
+sod:OrganVersion a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Organization version (time-scoped)"@en ;
+    rdfs:subClassOf prov:Entity .
+

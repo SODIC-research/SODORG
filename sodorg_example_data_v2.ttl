@@ -1,0 +1,151 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix eu: <http://publications.europa.eu/resource/authority/data-theme/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sod: <https://example.org/sodorg/ontology#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.org/sodorg/resource/category/Energie> a skos:Concept,
+        sod:OpenDataCategory ;
+    skos:exactMatch eu:ENER ;
+    skos:prefLabel "Energie"@de .
+
+<https://example.org/sodorg/resource/orgVersion/Alternative_Energien/2021-02-28> a sod:OrganVersion ;
+    dct:spatial <https://example.org/sodorg/resource/place/Kiel> ;
+    dct:temporal <https://example.org/sodorg/resource/interval/2021-02-28_to_2026-02-17/Alternative_Energien> ;
+    prov:specializationOf <https://example.org/sodorg/resource/org/Alternative_Energien> ;
+    prov:wasGeneratedBy <https://example.org/sodorg/resource/activity/snapshot-2026-02-17> ;
+    sod:countryName "Germany" ;
+    sod:federalStateName "Schleswig-Holstein" ;
+    sod:hasCategoryAssignment [ ] ;
+    sod:organType <https://example.org/sodorg/resource/organType/federalState> .
+
+<https://example.org/sodorg/resource/orgVersion/Ministerium_fuer_Energiewende/2017-02-28> a sod:OrganVersion ;
+    dct:spatial <https://example.org/sodorg/resource/place/Kiel> ;
+    dct:temporal <https://example.org/sodorg/resource/interval/2017-02-28_to_2021-02-28/Ministerium_fuer_Energiewende> ;
+    prov:specializationOf <https://example.org/sodorg/resource/org/Ministerium_fuer_Energiewende> ;
+    prov:wasGeneratedBy <https://example.org/sodorg/resource/activity/snapshot-2026-02-17> ;
+    sod:countryName "Germany" ;
+    sod:federalStateName "Schleswig-Holstein" ;
+    sod:hasCategoryAssignment [ ] ;
+    sod:organType <https://example.org/sodorg/resource/organType/federalState> .
+
+<https://example.org/sodorg/resource/orgVersion/Ministerium_fuer_Klimaschutz/2021-02-28> a sod:OrganVersion ;
+    dct:spatial <https://example.org/sodorg/resource/place/Kiel> ;
+    dct:temporal <https://example.org/sodorg/resource/interval/2021-02-28_to_2026-02-17/Ministerium_fuer_Klimaschutz> ;
+    prov:specializationOf <https://example.org/sodorg/resource/org/Ministerium_fuer_Klimaschutz> ;
+    prov:wasGeneratedBy <https://example.org/sodorg/resource/activity/snapshot-2026-02-17> ;
+    sod:countryName "Germany" ;
+    sod:federalStateName "Schleswig-Holstein" ;
+    sod:hasCategoryAssignment [ ] ;
+    sod:organType <https://example.org/sodorg/resource/organType/federalState> .
+
+<https://example.org/sodorg/resource/orgVersion/Ministerium_fuer_Lanwirtschaft/2013-02-28> a sod:OrganVersion ;
+    dct:spatial <https://example.org/sodorg/resource/place/Kiel> ;
+    dct:temporal <https://example.org/sodorg/resource/interval/2013-02-28_to_2017-02-28/Ministerium_fuer_Lanwirtschaft> ;
+    prov:specializationOf <https://example.org/sodorg/resource/org/Ministerium_fuer_Lanwirtschaft> ;
+    prov:wasGeneratedBy <https://example.org/sodorg/resource/activity/snapshot-2026-02-17> ;
+    sod:countryName "Germany" ;
+    sod:federalStateName "Schleswig-Holstein" ;
+    sod:hasCategoryAssignment [ ] ;
+    sod:organType <https://example.org/sodorg/resource/organType/federalState> .
+
+<https://example.org/sodorg/resource/interval/2013-02-28_to_2017-02-28/Ministerium_fuer_Lanwirtschaft> a time:Interval ;
+    time:hasBeginning [ ] ;
+    time:hasEnd [ ] .
+
+<https://example.org/sodorg/resource/interval/2017-02-28_to_2021-02-28/Ministerium_fuer_Energiewende> a time:Interval ;
+    time:hasBeginning [ ] ;
+    time:hasEnd [ ] .
+
+<https://example.org/sodorg/resource/interval/2021-02-28_to_2026-02-17/Alternative_Energien> a time:Interval ;
+    time:hasBeginning [ ] ;
+    time:hasEnd [ ] .
+
+<https://example.org/sodorg/resource/interval/2021-02-28_to_2026-02-17/Ministerium_fuer_Klimaschutz> a time:Interval ;
+    time:hasBeginning [ ] ;
+    time:hasEnd [ ] .
+
+<https://example.org/sodorg/resource/org/Holz> a org:Organization ;
+    skos:prefLabel "Holz"@de ;
+    org:subOrganizationOf <https://example.org/sodorg/resource/org/Alternative_Energien> .
+
+<https://example.org/sodorg/resource/organType/city> a skos:Concept ;
+    skos:inScheme <https://example.org/sodorg/resource/conceptScheme/organType> ;
+    skos:prefLabel "city"@en .
+
+<https://example.org/sodorg/resource/organType/country> a skos:Concept ;
+    skos:inScheme <https://example.org/sodorg/resource/conceptScheme/organType> ;
+    skos:prefLabel "country"@en .
+
+<https://example.org/sodorg/resource/organType/ministry> a skos:Concept ;
+    skos:inScheme <https://example.org/sodorg/resource/conceptScheme/organType> ;
+    skos:prefLabel "ministry"@en .
+
+<https://example.org/sodorg/resource/organType/other> a skos:Concept ;
+    skos:inScheme <https://example.org/sodorg/resource/conceptScheme/organType> ;
+    skos:prefLabel "other"@en .
+
+<https://example.org/sodorg/resource/changeEvent/Ministerium_fuer_Energiewende_to_Ministerium_fuer_Klimaschutz/2021-02-28> a org:ChangeEvent ;
+    org:originalOrganization <https://example.org/sodorg/resource/org/Ministerium_fuer_Energiewende> ;
+    org:resultingOrganization <https://example.org/sodorg/resource/org/Ministerium_fuer_Klimaschutz> ;
+    prov:endedAtTime "2021-02-28T00:00:00+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2021-02-28T00:00:00+00:00"^^xsd:dateTime ;
+    prov:wasGeneratedBy <https://example.org/sodorg/resource/activity/snapshot-2026-02-17> ;
+    sod:directionInferred true ;
+    sod:inferenceNote "field=organSuccessor on rowOrgan=Ministerium für Klimaschutz" .
+
+<https://example.org/sodorg/resource/changeEvent/Ministerium_fuer_Lanwirtschaft_to_Ministerium_fuer_Energiewende/2017-02-28> a org:ChangeEvent ;
+    org:originalOrganization <https://example.org/sodorg/resource/org/Ministerium_fuer_Lanwirtschaft> ;
+    org:resultingOrganization <https://example.org/sodorg/resource/org/Ministerium_fuer_Energiewende> ;
+    prov:endedAtTime "2017-02-28T00:00:00+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2017-02-28T00:00:00+00:00"^^xsd:dateTime ;
+    prov:wasGeneratedBy <https://example.org/sodorg/resource/activity/snapshot-2026-02-17> ;
+    sod:directionInferred true ;
+    sod:inferenceNote "field=organPredecessor on rowOrgan=Ministerium für Lanwirtschaft" .
+
+<https://example.org/sodorg/resource/org/Alternative_Energien> a org:Organization ;
+    skos:altLabel "Alternative energy"@en ;
+    skos:prefLabel "Alternative Energien"@de ;
+    org:hasSubOrganization <https://example.org/sodorg/resource/org/Holz> ;
+    org:subOrganizationOf <https://example.org/sodorg/resource/org/Ministerium_fuer_Klimaschutz> .
+
+<https://example.org/sodorg/resource/org/Ministerium_fuer_Klimaschutz> a org:Organization ;
+    skos:altLabel "Ministry for new energy"@en ;
+    skos:prefLabel "Ministerium für Klimaschutz"@de ;
+    org:hasSubOrganization <https://example.org/sodorg/resource/org/Alternative_Energien> ;
+    org:resultedFrom <https://example.org/sodorg/resource/changeEvent/Ministerium_fuer_Energiewende_to_Ministerium_fuer_Klimaschutz/2021-02-28> ;
+    prov:wasDerivedFrom <https://example.org/sodorg/resource/org/Ministerium_fuer_Energiewende> .
+
+<https://example.org/sodorg/resource/org/Ministerium_fuer_Lanwirtschaft> a org:Organization ;
+    skos:altLabel "Ministry for Agriculture"@en ;
+    skos:prefLabel "Ministerium für Lanwirtschaft"@de ;
+    org:changedBy <https://example.org/sodorg/resource/changeEvent/Ministerium_fuer_Lanwirtschaft_to_Ministerium_fuer_Energiewende/2017-02-28> .
+
+<https://example.org/sodorg/resource/org/Ministerium_fuer_Energiewende> a org:Organization ;
+    skos:altLabel "Ministry for Energy"@en ;
+    skos:prefLabel "Ministerium für Energiewende"@de ;
+    org:changedBy <https://example.org/sodorg/resource/changeEvent/Ministerium_fuer_Energiewende_to_Ministerium_fuer_Klimaschutz/2021-02-28> ;
+    org:resultedFrom <https://example.org/sodorg/resource/changeEvent/Ministerium_fuer_Lanwirtschaft_to_Ministerium_fuer_Energiewende/2017-02-28> ;
+    prov:wasDerivedFrom <https://example.org/sodorg/resource/org/Ministerium_fuer_Lanwirtschaft> .
+
+<https://example.org/sodorg/resource/place/Kiel> a dct:Location ;
+    skos:prefLabel "Kiel"@de .
+
+<https://example.org/sodorg/resource/conceptScheme/organType> a skos:ConceptScheme ;
+    skos:hasTopConcept <https://example.org/sodorg/resource/organType/city>,
+        <https://example.org/sodorg/resource/organType/country>,
+        <https://example.org/sodorg/resource/organType/federalState>,
+        <https://example.org/sodorg/resource/organType/ministry>,
+        <https://example.org/sodorg/resource/organType/other> ;
+    skos:prefLabel "Organ type scheme (example)"@en .
+
+<https://example.org/sodorg/resource/organType/federalState> a skos:Concept ;
+    skos:inScheme <https://example.org/sodorg/resource/conceptScheme/organType> ;
+    skos:prefLabel "federalState"@en .
+
+<https://example.org/sodorg/resource/activity/snapshot-2026-02-17> a prov:Activity ;
+    prov:generatedAtTime "2026-02-17T00:00:00+00:00"^^xsd:dateTime .
+
