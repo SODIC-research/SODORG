@@ -31,9 +31,9 @@ This repository is intended for research and method development. It is not a com
 
 The transformation pipeline takes a small tabular template (`organRdfFromCSV.ods`) and generates:
 
-- an RDF **data graph** (Turtle + JSON-LD)
-- a minimal **domain ontology** (Turtle + JSON-LD)
-- **SHACL shapes** for validation (Turtle + JSON-LD)
+- an RDF **data graph** (JSON-LD)
+- a minimal **domain ontology** (JSON-LD)
+- **SHACL shapes** for validation (JSON-LD)
 - a JSON-LD **@context** to keep the JSON-LD compact and consistent
 
 The transformation follows these modeling principles:
@@ -153,10 +153,10 @@ If you use this repository in your research, please cite:
 ```bibtex
 @misc{SODORGExample2026,
   title        = {SODORG Example Graph: Time-scoped Organizations, Change Events, and EU Theme Alignment (RDF/JSON-LD/SHACL)},
-  author       = {Florian Hahn and the SODIC Research Group},
+  author       = {Florian Hahn},
   year         = {2026},
   howpublished = {\url{https://github.com/SODIC-research/SODORG}},
-  note         = {Accessed: May 2026}
+  note         = {Accessed: March 2026}
 }
 ```
 
