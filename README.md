@@ -152,7 +152,7 @@ If you use this repository in your research, please cite:
 
 ```bibtex
 @misc{SODORGExample2026,
-  title        = {SODORG Example Graph: Time-scoped Organizations, Change Events, and EU Theme Alignment (RDF/JSON-LD/SHACL)},
+  title        = {SODORG Example Graph: Time-scoped Organizations, Change Events, and EU Theme Alignment (RDF/JSON-LD/SHACL) from KGCW paper: "From Federal Heterogeneity to Reproducible Analytics: A Provenance-Aware Knowledge Graph for Cross-Portal Comparability of German Open Government Data"},
   author       = {Florian Hahn},
   year         = {2026},
   howpublished = {\url{https://github.com/SODIC-research/SODORG}},
